@@ -91,3 +91,11 @@ We are left with two last problems. `__FILE__` and `__dir__` returns `"(eval)"` 
 ```
 
 The final code has some more additional tricks, so code can be freely formatted. You can discover it on your own. Good luck!
+
+## Why the source code of this project looks weird?
+
+Because it was compiled by a SCAD itself. If you want to see original source, just decompile it with:
+
+```
+scad -di lib/scad/compiler.rb
+```
